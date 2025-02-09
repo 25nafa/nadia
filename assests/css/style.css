@@ -1,0 +1,154 @@
+:root{
+    --first:#ebedef;
+    --second:#496595;
+    --third:#90a7c4;
+    --fourth:#c6d0de;
+    --fifth:#e0ddc6;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: var(--fifth);
+    height: 100vh;
+}
+header{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    background-color: #fff;
+    /* border-bottom: 1px solid gray; */
+    padding: 20px;
+    align-items: center;
+}
+.logo{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--second);
+}
+.logo a{
+    font-family: 'manrope';
+    color: var(--second);
+    text-decoration: none;
+}
+.logo span{
+    color: black;
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+nav a{
+    color: black;
+    display: inline-block;
+    font-size: 1rem;
+    font-family: 'manrope';
+    margin: 0 1rem;
+    text-decoration: none;
+}
+nav a:hover{
+    color: var(--second);
+}
+nav a::after{
+    content: '';
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--second);
+    transform: scaleX(0);
+    transition: 0.2s linear;
+}
+nav a:hover::after{
+    transform: scaleX(0.5);
+}
+.nav-extra a{
+    color: black;
+    margin: 0 1rem;
+    font-size: 1.5rem;
+}
+.nav-extra a:hover{
+    color: var(--second);
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #fff;
+    padding: 5px;
+    align-items: center;
+    text-align: center;
+}
+.hero .content{
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+    position: center;
+}
+.hero .content h1{
+    font-size: 4em;
+    color: var(--second);
+}
+.hero .content h1 span{
+    color: black;
+}
+.hero .content p{
+    font-size: 2em;
+    color: black;
+    max-width: 50rem;
+}
+.hero .content .cta{
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    font-size: 1.4rem;
+    color: #fff;
+    background-color: var(--third);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
+.hero .sosmed .cta{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    display: grid;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    gap: 2.5rem;
+    background-color: var(--first);
+    border-radius: 0.5rem;
+}
+.hero .sosmed .cta a {
+    font-size: 1.7rem; 
+    color: black;
+    text-decoration: none; 
+}
+.hero .sosmed .cta a:hover{
+    color: var(--second)
+}
+.hero .logo .cta{
+    position: fixed;
+    bottom: 5px;
+    left: 10px;
+    display: flex;
+    padding: 1rem 2rem;
+    margin: 0.5rem;
+    gap: 2.5rem;
+    background-color: #fff;
+    border-radius: 5rem;
+    border:1px solid black;
+}
+.hero .logo .cta a{
+    color: black
+}
+.hero .chat .text .cta{
+    position: fixed;
+    bottom: 5px;
+    right: 150px;
+    display: flex;
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: var(--third);
+    border-radius: 0.5rem;
+    text-decoration: none;
+}
